@@ -11,10 +11,25 @@ background(0);
 }
 void draw()
 {
-  stroke(random(255), random(255), random(255));
+  //stroke( int(random(255)), int(random(255)), int(random(255)));
+  stroke( int( random( #ffffff )  ) );
+  
+  while ( endX < 300 )
+  {
+    endX = startX + int(random(9));
+    endY = startY + int(random(-9,9));
+    
+    line(starX, startY, endX, endY);
+    
+    startX = endX;
+    startY = endY;
+  }
 }
 void mousePressed()
 {
-
+  startX = 0;
+  startY = 150;
+  endX = 0;
+  endY = 150;
 }
 
