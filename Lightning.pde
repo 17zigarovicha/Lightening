@@ -11,7 +11,7 @@ background(0);
 }
 void draw()
 {
-
+  stroke(random(255), random(255), random(255));
 }
 void mousePressed()
 {
