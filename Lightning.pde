@@ -1,4 +1,3 @@
-
 int startX = 0;
 int startY = 150;
 int endX = 0;
@@ -16,8 +15,8 @@ void draw()
   stroke( random(255), random(255), random(255) );
 
   while ( endX < 300 ) {
-    endX = startX + random(9);
-    endY = startY + random(-9, 9);
+    endX = startX + (int)(Math.random() *5 + 1);
+    endY = startY + (int)(Math.random() *5 - 1);
     
     line(startX, startY, endX, endY);
     
